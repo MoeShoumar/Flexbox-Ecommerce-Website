@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -62,6 +63,44 @@ input[type=checkbox] {
     font-size: 24px;
 }
 
+.product-image {
+    width: 20%;
+    border: solid grey;
+    display: flex;
+
+}
+
+/* items styling*/
+
+.main {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 8%;
+}
+
+.title {
+    font-size: 90px;
+    margin: 4rem 0 2rem 0;
+}
+
+.product-grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
 
 @media (max-width:780px) {
     .menu {
@@ -101,4 +140,5 @@ input[type=checkbox] {
         display: block;
 
     }
+
 }
