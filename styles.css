@@ -28,6 +28,7 @@ li {
     background-color: teal;
 
     color: #fff;
+    margin-bottom: 20px;
 
 }
 
@@ -70,7 +71,7 @@ input[type=checkbox] {
 
 }
 
-*/ @media (max-width:780px) {
+@media (max-width:780px) {
     .menu {
         display: none;
 
@@ -85,6 +86,7 @@ input[type=checkbox] {
         text-align: center;
 
         padding: 16px 0;
+
     }
 
     .menu li:hover {
@@ -139,8 +141,12 @@ input[type=checkbox] {
     overflow: hidden;
     text-align: center;
     box-sizing: border-box;
-    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .prodcut-container>.title {
     font-size: 20px;
@@ -148,11 +154,11 @@ input[type=checkbox] {
     text-align: center;
 }
 
-.prodcut-container>.price {
+.prodcut-info-container>.price {
     font-style: italic;
 }
 
-.product-image {
+.prodcut-container>.product-image {
     height: 200px;
     background-size: cover;
     background-position: center;
