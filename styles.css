@@ -21,7 +21,7 @@ li {
 
     align-items: center;
 
-    justify-content: space-around;
+    justify-content: space-between;
 
     padding: 20px;
 
@@ -117,27 +117,57 @@ input[type=checkbox] {
 
 .product-grid-container {
     margin-top: 20px;
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 6px;
+    grid-gap: 15px;
 }
 
 @media(max-width:1000px) {
     .product-grid-container {
         grid-template-columns: 1fr 1fr;
     }
+
+    .prodcut-container .title {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .prodcut-info-container .price {
+        font-style: italic;
+        size: 7px;
+    }
+
+    .prodcut-container>.product-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+
 }
 
 @media(max-width:780px) {
     .product-grid-container {
         grid-template-columns: 1fr;
     }
+
+    .prodcut-container .title {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .prodcut-info-container .price {
+        font-size: 30px;
+        font-style: italic;
+    }
+
 }
 
 .prodcut-container {
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     text-align: center;
     box-sizing: border-box;
@@ -145,21 +175,31 @@ input[type=checkbox] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid rgb(184, 126, 126);
 }
 
 
-.prodcut-container>.title {
-    font-size: 20px;
+.prodcut-info-container .title {
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
 }
 
-.prodcut-info-container>.price {
+.prodcut-info-container .price {
     font-style: italic;
+    font-size: 0px;
 }
 
-.prodcut-container>.product-image {
+/* .prodcut-container>.product-image {
     height: 200px;
     background-size: cover;
     background-position: center;
+} */
+
+img {
+    background-position: center;
+    max-width: 100%;
+    width: auto;
+    background-size: cover;
+    height: 200px;
 }
