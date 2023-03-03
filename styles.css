@@ -15,8 +15,6 @@ li {
 }
 
 .navbar {
-    background-color: rgb(190, 182, 197);
-
     display: flex;
 
     align-items: center;
@@ -28,7 +26,7 @@ li {
     background-color: teal;
 
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 
 }
 
@@ -37,13 +35,13 @@ li {
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .menu {
     display: flex;
-    gap: 1em;
-    font-size: 15px;
+    justify-content: flex-end;
+    font-size: 1em;
 }
 
 .menu li:hover {
@@ -55,10 +53,6 @@ li {
     padding: 5px 14px;
 }
 
-input[type=checkbox] {
-    display: none;
-}
-
 .hamburger {
     display: none;
     font-size: 24px;
@@ -67,8 +61,6 @@ input[type=checkbox] {
 .product-image {
     width: 20%;
     border: solid grey;
-    display: flex;
-
 }
 
 @media (max-width:780px) {
@@ -91,7 +83,7 @@ input[type=checkbox] {
 
     .menu li:hover {
 
-        display: inline-block;
+        display: block;
 
         background-color: #4c9e9e;
 
@@ -109,6 +101,21 @@ input[type=checkbox] {
 
         display: block;
 
+    }
+
+    .product-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .prodcut-container .title {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .prodcut-info-container .price {
+        font-size: 30px;
+        font-style: italic;
     }
 
 }
@@ -148,29 +155,12 @@ input[type=checkbox] {
 
 }
 
-@media(max-width:780px) {
-    .product-grid-container {
-        grid-template-columns: 1fr;
-    }
 
-    .prodcut-container .title {
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .prodcut-info-container .price {
-        font-size: 30px;
-        font-style: italic;
-    }
-
-}
 
 .prodcut-container {
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,12 +179,6 @@ input[type=checkbox] {
     font-style: italic;
     font-size: 0px;
 }
-
-/* .prodcut-container>.product-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-} */
 
 img {
     background-position: center;
