@@ -30,6 +30,10 @@ li {
 
 }
 
+#checkbox-toggle {
+    display: none;
+}
+
 .nav-links a {
     color: wheat;
 }
@@ -59,9 +63,65 @@ li {
 }
 
 .product-image {
-    width: 20%;
+    width: 80%;
+    height: 80%;
     border: solid grey;
+    background-size: cover;
+    border-radius: 10%;
+
 }
+
+
+/* items styling*/
+
+.product-grid-container {
+    max-width: 100vw;
+    margin: 0 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.prodcut-container {
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+
+}
+
+.prodcut-info-container .title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.prodcut-info-container .price {
+    font-style: italic;
+    font-size: 0px;
+}
+
+/* 
+img {
+    background-position: center;
+    max-width: 100%;
+    width: auto;
+    background-size: fit;
+    height: 200px;
+} */
 
 @media (max-width:780px) {
     .menu {
@@ -114,21 +174,10 @@ li {
     }
 
     .prodcut-info-container .price {
-        font-size: 30px;
+        font-size: 2em;
         font-style: italic;
     }
 
-}
-
-/* items styling*/
-
-.product-grid-container {
-    margin-top: 20px;
-    max-width: 1700px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
 }
 
 @media(max-width:1000px) {
@@ -153,37 +202,4 @@ li {
         background-position: center;
     }
 
-}
-
-
-
-.prodcut-container {
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(184, 126, 126);
-}
-
-
-.prodcut-info-container .title {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.prodcut-info-container .price {
-    font-style: italic;
-    font-size: 0px;
-}
-
-img {
-    background-position: center;
-    max-width: 100%;
-    width: auto;
-    background-size: cover;
-    height: 200px;
 }
